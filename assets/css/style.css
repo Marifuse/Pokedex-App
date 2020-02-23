@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Trade Winds', cursive;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,88,88,1) 100%);
+}
+
+/* Navbar */
+#navbarNav {
+  justify-content: end;
+}
+
+/* Header con imagen y texto */
+.header-container {
+  padding-top: 3em;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-logo {
+  width: 45%;
+}
+
+.text-title {
+  text-align: center;
+}
+
+.title-header {
+  color: #000000;
+  font-size: 2.5em;
+  font-weight: bold;
+}
