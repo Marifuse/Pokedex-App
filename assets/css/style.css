@@ -1,8 +1,9 @@
 body {
   margin: 0;
   font-family: 'Trade Winds', cursive;
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,88,88,1) 100%);
+  background-color: #8b0000;
+  /* background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,88,88,1) 100%); */
 }
 
 /* Navbar */
@@ -34,8 +35,25 @@ body {
 
 .title-header {
   color: #000000;
+  -webkit-text-stroke: 2px #C7C7C7;
   font-size: 2.5em;
   font-weight: bold;
+  padding-bottom: 1em;
+}
+
+/* Contenedor de los Pokemon visualizados en pantalla */
+.pokemon-cont {
+  width: 150px;
+  background-color: white;
+  border: 2px solid #000000;
+  display: inline-block;
+  text-align: center;
+  margin: 1em;
+}
+
+.element {
+  background-color: #FFC107;
+  border-bottom: 2px solid #000000;
 }
 
 
@@ -54,6 +72,21 @@ body {
     width: 65%;
   }
   .title-header {
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+}
+
+/* Medias para contenedor pokémon mobile */
+@media (min-width: 300px) and (max-width: 575px) {
+  /* Contenedor de los Pokémon */
+  .pokemon-cont {
+    width: 90%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  /* Contenedor de los Pokémon */
+  .pokemon-cont {
+    width: 41%;
   }
 }
