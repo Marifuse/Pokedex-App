@@ -36,5 +36,15 @@ $(document).ready(function() {
 
     pokeAjax();
 
+    // Función para buscar pokémon en search
+    $(document).ready(function() {
+      $('#pokemon-search').on('keyup', function() {
+        var find = $(this).val().toLowerCase();
+      $('.pokemon-cont').filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(find) > -1)
+      });
+    });
+  });
+
 
 })
