@@ -49,11 +49,67 @@ body {
   display: inline-block;
   text-align: center;
   margin: 1em;
+  transition: .3s;
+}
+
+.pokemon-cont:hover {
+  cursor: pointer;
+  background-color: #5590ff;
 }
 
 .element {
   background-color: #FFC107;
   border-bottom: 2px solid #000000;
+}
+
+/* Contenedor específico para ver información detallada del Pokémon */
+.poke-info {
+  background-color: white;
+  border: 2px solid #000000;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.poke-manes {
+  background-color: #FFC107;
+  font-size: 2em;
+  border-bottom: 2px solid #000000;
+}
+
+.poke-ids {
+  font-size: 2em;
+}
+
+.specific-img {
+  width: 15em;
+}
+
+.info-title {
+  background-color: #FFC107;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.poke-container {
+  width: 40%;
+  text-align: center;
+  margin-left: 30%;
+}
+
+.back {
+  width: 10em;
+  background-color: #FFC107;
+  padding: 0.5em;
+  border-radius: 1em;
+  border: 2px solid #000000;
+  margin-bottom: 2em;
+  transition: .3s;
+}
+
+.back:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #7f00d7;
 }
 
 
