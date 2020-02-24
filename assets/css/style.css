@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Trade Winds', cursive;
-  background-color: #8b0000;
+  background-color: #8B0000;
   /* background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,88,88,1) 100%); */
 }
@@ -54,7 +54,8 @@ body {
 
 .pokemon-cont:hover {
   cursor: pointer;
-  background-color: #5590ff;
+  background-color: #5590FF;
+  box-shadow: 3px 3px 7px #02008D;
 }
 
 .element {
@@ -109,7 +110,8 @@ body {
 .back:hover {
   cursor: pointer;
   color: #FFFFFF;
-  background-color: #7f00d7;
+  background-color: #7F00D7;
+  box-shadow: 5px 5px 10px #C46EFF;
 }
 
 
