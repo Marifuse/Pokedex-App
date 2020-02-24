@@ -5,6 +5,7 @@ $('#pokemon-search')[0].value = "";
     // Llama a la función para llamar a la lista completa de Pokémons
     pokeAjax();
 
+    // Función para mostrar Pokémon específico
     $(document).on('click', '.pokemon-cont', function(event) {
       pokeAjax2($(this).data('id'));
 
