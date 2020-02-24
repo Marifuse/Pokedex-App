@@ -2,8 +2,6 @@ body {
   margin: 0;
   font-family: 'Trade Winds', cursive;
   background-color: #8B0000;
-  /* background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,88,88,1) 100%); */
 }
 
 /* Navbar */
@@ -89,6 +87,7 @@ body {
   background-color: #FFC107;
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
+  padding: 1em;
 }
 
 .poke-container {
@@ -112,6 +111,11 @@ body {
   color: #FFFFFF;
   background-color: #7F00D7;
   box-shadow: 5px 5px 10px #C46EFF;
+}
+
+/* Gráfico */
+.canvasjs-chart-canvas {
+  width: 100%;
 }
 
 
