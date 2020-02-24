@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-// Primera parte para exponer los pokemon en pantalla
+// Primera parte para exponer los Pokémon en pantalla
   var addPoke = function(pokemon) {
     pokemon.forEach(function(pokemons) {
       var id = pokemons.entry_number;
