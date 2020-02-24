@@ -12,7 +12,7 @@ body {
 }
 
 #navbarNav {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 /* Header con imagen y texto */
@@ -35,7 +35,7 @@ body {
 
 .title-header {
   color: #000000;
-  -webkit-text-stroke: 2px #C7C7C7;
+  -webkit-text-stroke: 1px #C7C7C7;
   font-size: 2.5em;
   font-weight: bold;
   padding-bottom: 1em;
@@ -136,7 +136,7 @@ body {
 @media (min-width: 300px) and (max-width: 575px) {
   /* Contenedor de los Pokémon */
   .pokemon-cont {
-    width: 90%;
+    width: 93%;
   }
 }
 
