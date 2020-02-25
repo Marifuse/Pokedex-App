@@ -24,9 +24,11 @@ $('#pokemon-search')[0].value = "";
 
 // Primera parte para exponer los Pokémon en pantalla
   const addPoke = function(pokemon) {
-    pokemon.forEach(function(pokemons) { //forEach es un ciclo que se usa en arreglos
-      var id = pokemons.entry_number;
-      var img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
+    pokemon.forEach(function(pokemons) { // forEach es un ciclo que se usa en arreglos
+      var numberPoke =pokemons.pokemon_species.url.split("/");
+      var id = numberPoke[numberPoke.length-2]; // Esto busca realmente la posición donde está ubicado el pokémon y lo coloca donde corresponde
+      // console.log(numberPoke)
+      var img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + numberPoke[numberPoke.length-2] + ".png";
       var url = pokemons.pokemon_species.url;
       var name = pokemons.pokemon_species.name.charAt(0).toUpperCase() + pokemons.pokemon_species.name.slice(1);
       $("#pokeElements").append(pokemonAdd(name, url, img, id));
@@ -42,7 +44,7 @@ $('#pokemon-search')[0].value = "";
   // Ajax donde se llama al API de Pokémon
     const pokeAjax = function(pokemons) {
       $.ajax({
-        url: 'https://pokeapi.co/api/v2/pokedex/1',
+        url: 'https://pokeapi.co/api/v2/pokedex/3', // el 1 trae a todos, el 2 Kanto, 3 Jhoto, y así susecivamente
         type: 'GET',
         datatype: 'json',
       })
