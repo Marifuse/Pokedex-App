@@ -25,7 +25,7 @@ $('#pokemon-search')[0].value = "";
 // Primera parte para exponer los Pokémon en pantalla
   const addPoke = function(pokemon) {
     pokemon.forEach(function(pokemons) { // forEach es un ciclo que se usa en arreglos
-      var numberPoke =pokemons.pokemon_species.url.split("/");
+      var numberPoke = pokemons.pokemon_species.url.split("/");
       var id = numberPoke[numberPoke.length-2]; // Esto busca realmente la posición donde está ubicado el pokémon y lo coloca donde corresponde
       // console.log(numberPoke)
       var img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + numberPoke[numberPoke.length-2] + ".png";
