@@ -24,7 +24,7 @@ $('#pokemon-search')[0].value = "";
 
 // Primera parte para exponer los Pokémon en pantalla
   const addPoke = function(pokemon) {
-    pokemon.forEach(function(pokemons) {
+    pokemon.forEach(function(pokemons) { //forEach es un ciclo que se usa en arreglos
       var id = pokemons.entry_number;
       var img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
       var url = pokemons.pokemon_species.url;
@@ -69,6 +69,7 @@ $('#pokemon-search')[0].value = "";
       var defEsp = pokemon.stats[4].base_stat;
       var velEsp = pokemon.stats[5].base_stat;
       $("#pokeElements").remove();
+      $("#footerPoke").remove();
       $("#elementPoke").append(pokemonAdd2(img, name, id, hp, def, atk, vel, defEsp, velEsp));
       $(".back").click(function(){window.location.reload(true);});
       var datos = [

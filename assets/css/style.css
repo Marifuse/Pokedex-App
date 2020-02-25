@@ -9,6 +9,10 @@ body {
   background-color: #000000 !important;
 }
 
+.navbar-brand {
+  width: 50%;
+}
+
 #navbarNav {
   justify-content: flex-end;
 }
@@ -40,8 +44,12 @@ body {
 }
 
 /* Contenedor de los Pokemon visualizados en pantalla */
+#pokeElements {
+  margin-bottom: 10em;
+}
+
 .pokemon-cont {
-  width: 150px;
+  width: 198px;
   background-color: white;
   border: 2px solid #000000;
   display: inline-block;
@@ -116,6 +124,21 @@ body {
 /* Gráfico */
 .canvasjs-chart-canvas {
   width: 100%;
+  border: 2px solid black;
+}
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  padding: 0.5em;
+}
+.poke-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.pokeballs {
+  width: 20%;
 }
 
 
